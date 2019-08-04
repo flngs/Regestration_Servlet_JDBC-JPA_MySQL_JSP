@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c25e30-cf0a-425a-87b2-0e3023aef373" name="Default" comment="" />
+    <list default="true" id="29c25e30-cf0a-425a-87b2-0e3023aef373" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/dao/EmployeeDao.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,15 +58,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployeeDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmployeeDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/dao/EmployeeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+            <state relative-caret-position="348">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding>
                 <element signature="method#getConnection#0;class#EmployeeDao#0" />
-                <element signature="method#deleteUser#0;class#EmployeeDao#0" />
                 <element signature="method#updateUser#0;class#EmployeeDao#0" />
+                <element signature="method#getUserByUserNameAndPassword#0;class#EmployeeDao#0" />
+                <element signature="method#registerEmployee#0;class#EmployeeDao#0" />
+                <element signature="method#extractUserFromResultSet#0;class#EmployeeDao#0" />
                 <element signature="method#printSQLException#0;class#EmployeeDao#0" />
               </folding>
             </state>
@@ -81,7 +87,7 @@
       <file leaf-file-name="EmployeeServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/web/EmployeeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1323">
+            <state relative-caret-position="485">
               <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
               <folding>
                 <element signature="method#doPost#0;class#EmployeeServlet#0" />
@@ -117,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="successLogin.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="successLogin.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/successLogin.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -136,6 +142,9 @@
         <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -157,7 +166,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/update.jsp" />
         <option value="$PROJECT_DIR$/web/employeeregister.jsp" />
         <option value="$PROJECT_DIR$/web/update.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/net/dao/EmployeeDao.java" />
         <option value="$PROJECT_DIR$/web/successDelete.jsp" />
         <option value="$PROJECT_DIR$/web/successUpdate.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
@@ -165,6 +173,7 @@
         <option value="$PROJECT_DIR$/web/getUser.jsp" />
         <option value="$PROJECT_DIR$/web/delete.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/net/web/EmployeeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/dao/EmployeeDao.java" />
       </list>
     </option>
   </component>
@@ -208,6 +217,7 @@
     <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -483,11 +493,12 @@
       <workItem from="1564695139685" duration="1112000" />
       <workItem from="1564748748462" duration="274000" />
       <workItem from="1564781274111" duration="49000" />
+      <workItem from="1564919977597" duration="1761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115829000" />
+    <option name="totallyTimeSpent" value="117590000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,6 +511,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.32867134" />
@@ -511,12 +523,12 @@
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32867134" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.3295129" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49928367" weight="0.52307695" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32867134" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21848138" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2213467" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="Database" order="2" weight="0.18409742" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
@@ -589,8 +601,10 @@
           <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="method#getConnection#0;class#EmployeeDao#0" />
-            <element signature="method#deleteUser#0;class#EmployeeDao#0" />
             <element signature="method#updateUser#0;class#EmployeeDao#0" />
+            <element signature="method#getUserByUserNameAndPassword#0;class#EmployeeDao#0" />
+            <element signature="method#registerEmployee#0;class#EmployeeDao#0" />
+            <element signature="method#extractUserFromResultSet#0;class#EmployeeDao#0" />
             <element signature="method#printSQLException#0;class#EmployeeDao#0" />
           </folding>
         </state>
@@ -818,43 +832,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/web/EmployeeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
-          <folding>
-            <element signature="method#doPost#0;class#EmployeeServlet#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/dao/EmployeeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding>
-            <element signature="method#getConnection#0;class#EmployeeDao#0" />
-            <element signature="method#deleteUser#0;class#EmployeeDao#0" />
-            <element signature="method#updateUser#0;class#EmployeeDao#0" />
-            <element signature="method#printSQLException#0;class#EmployeeDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/delete.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/employeedetails.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -873,6 +850,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/delete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/web/EmployeeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+          <folding>
+            <element signature="method#doPost#0;class#EmployeeServlet#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/dao/EmployeeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="method#getConnection#0;class#EmployeeDao#0" />
+            <element signature="method#updateUser#0;class#EmployeeDao#0" />
+            <element signature="method#getUserByUserNameAndPassword#0;class#EmployeeDao#0" />
+            <element signature="method#registerEmployee#0;class#EmployeeDao#0" />
+            <element signature="method#extractUserFromResultSet#0;class#EmployeeDao#0" />
+            <element signature="method#printSQLException#0;class#EmployeeDao#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -18,8 +18,9 @@ public class EmployeeDao implements EmployeeDaoInterface {
 
         try {
             Connection connection = getConnection();
-            Statement stmt = connection.createStatement();
-            int i = stmt.executeUpdate("DELETE FROM employee WHERE username=" + username);
+            PreparedStatement ps = connection.prepareStatement("DELETE FROM employee WHERE username=?");
+            ps.setString(1, username);
+            int i = ps.executeUpdate();
             if(i >= 1) {
                 return true;
             }
@@ -69,8 +70,9 @@ public class EmployeeDao implements EmployeeDaoInterface {
     public Employee getEmployee(String username) throws ClassNotFoundException {
         try {
             Connection connection = getConnection();
-            Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM employee WHERE username=" + username);
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM employee WHERE username=?");
+            ps.setString(1,username);
+            ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 return extractUserFromResultSet(rs);
             }
