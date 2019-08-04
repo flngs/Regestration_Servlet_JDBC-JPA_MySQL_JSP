@@ -12,7 +12,7 @@
     <title>Логирование</title>
 </head>
 <body>
-<form action="/login">
+<form action="/login" method="post">
     <h3>Страница авторизации</h3>
     <p>Логин:<br/>
     <input type="text" name="login"></p>

@@ -15,7 +15,7 @@
     <br/>
     <input type="submit" value="Регистрация" onclick="window.location='employeeregister.jsp';"/>
     <br/>
-    <input type="submit" value="Логирование" onclick="window.location='login.jsp';"/>
+    <input type="submit" value="Логирование" onclick="window.location='/login';"/>
     <br/>
     <input type="submit" value="Обновление пользователя" onclick="window.location='update.jsp';"/>
     <br/>

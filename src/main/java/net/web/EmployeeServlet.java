@@ -34,14 +34,7 @@ public class EmployeeServlet extends HttpServlet {
         String action = request.getServletPath();
 
         try {
-            if ("/login".equals(action)) {
-                String login = request.getParameter("login");
-                String pass = request.getParameter("pass");
-                Employee user = employeeDao.getUserByUserNameAndPassword(login, pass);
-                request.setAttribute("loginObject", user);
-                request.getRequestDispatcher("/successLogin.jsp").forward(request, response);
-
-            } else if ("/register".equals(action)) {
+             if ("/register".equals(action)) {
                 String firstName = request.getParameter("firstName");
                 String lastName = request.getParameter("lastName");
                 String username = request.getParameter("username");
@@ -87,7 +80,7 @@ public class EmployeeServlet extends HttpServlet {
                 String username = request.getParameter("username");
                 Employee user = employeeDao.getEmployee(username);
                 request.setAttribute("getUserObject", user);
-                request.getRequestDispatcher("/successGettingUser").forward(request,response);
+                request.getRequestDispatcher("successGettingUser.jsp").forward(request,response);
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

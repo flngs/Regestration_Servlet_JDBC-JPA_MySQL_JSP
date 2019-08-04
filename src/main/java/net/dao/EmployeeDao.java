@@ -5,16 +5,16 @@ import java.sql.*;
 import net.model.Employee;
 
 public class EmployeeDao implements EmployeeDaoInterface {
-    public static Connection getConnection() throws ClassNotFoundException {
+    public static Connection getConnection(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             return DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql_database?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root1999", "root1999");
-        } catch (SQLException e) {
+        } catch (SQLException|ClassNotFoundException e) {
             throw new RuntimeException("Failed connection to database", e);
         }
     }
 
-    public boolean deleteUser(String username) throws ClassNotFoundException {
+    public boolean deleteUser(String username){
 
         try {
             Connection connection = getConnection();
@@ -30,7 +30,7 @@ public class EmployeeDao implements EmployeeDaoInterface {
         return false;
     }
 
-    public boolean updateUser(Employee employee) throws ClassNotFoundException {
+    public boolean updateUser(Employee employee){
         try {
             Connection connection = getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE employee SET first_name=?, last_name=?, password=?, address=?, contact=? WHERE username=?");
@@ -50,7 +50,7 @@ public class EmployeeDao implements EmployeeDaoInterface {
         return false;
     }
 
-    public Employee getUserByUserNameAndPassword(String username, String password) throws ClassNotFoundException {
+    public Employee getUserByUserNameAndPassword(String username, String password){
         try {
             Connection connection = getConnection();
             PreparedStatement ps = connection.prepareStatement("SELECT * FROM employee WHERE username=? AND password=?");
@@ -67,7 +67,7 @@ public class EmployeeDao implements EmployeeDaoInterface {
         return null;
     }
 
-    public Employee getEmployee(String username) throws ClassNotFoundException {
+    public Employee getEmployee(String username){
         try {
             Connection connection = getConnection();
             PreparedStatement ps = connection.prepareStatement("SELECT * FROM employee WHERE username=?");
@@ -82,7 +82,7 @@ public class EmployeeDao implements EmployeeDaoInterface {
         return null;
     }
 
-    public int registerEmployee(Employee employee) throws ClassNotFoundException {
+    public int registerEmployee(Employee employee){
         String INSERT_USERS_SQL = "INSERT INTO employee" + "(first_name, last_name, username, password, address, contact) VALUES " + "(?, ?, ?, ?,?,?);";
 
         int result = 0;
