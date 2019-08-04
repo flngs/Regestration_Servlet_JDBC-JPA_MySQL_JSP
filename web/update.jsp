@@ -11,7 +11,7 @@
     <title>Update user by username</title>
 </head>
 <body>
-<form action="/update">
+<form action="/update" method="post">
     <table style="with: 80%">
         <tr>
             <h1><td>UserName</td></h1>

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/login")
-public class EmployeeServletLogin extends HttpServlet {
+public class LoginEmployeeServlet extends HttpServlet {
     private EmployeeDao employeeDao;
     @Override
     public void init(){

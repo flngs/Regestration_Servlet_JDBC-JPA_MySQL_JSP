@@ -13,15 +13,15 @@
 <body>
 
     <br/>
-    <input type="submit" value="Регистрация" onclick="window.location='employeeregister.jsp';"/>
+    <p><a href="/employeeRegister">Регистрация</a></p>
     <br/>
-    <input type="submit" value="Логирование" onclick="window.location='/login';"/>
+    <p><a href="/login">Лог</a></p>
     <br/>
-    <input type="submit" value="Обновление пользователя" onclick="window.location='update.jsp';"/>
+    <p><a href="/update">Обновление пользователя</a></p>
     <br/>
-    <input type="submit" value="Удаление пользователя" onclick="window.location='delete.jsp';"/>
+    <p><a href="/delete">Удаление пользователя</a></p>
     <br/>
-    <input type="submit" value="Получение данных пользователя" onclick="window.location='getUser.jsp';"/>
+    <p><a href="/getUser">Получение данных пользователя</a></p>
 
 </body>
 </html>

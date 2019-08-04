@@ -11,7 +11,7 @@
     <title>Get user by username</title>
 </head>
 <body>
-<form action="/getUser">
+<form action="/getUser" method="post">
     <p><h1>Getting a user by username</h1><br/>
     <input type="text" name="username"/><br/>
     <input type="submit" value="OK"/>

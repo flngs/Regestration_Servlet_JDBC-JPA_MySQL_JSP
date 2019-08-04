@@ -11,7 +11,7 @@
     <title>Delete user by username</title>
 </head>
 <body>
-<form action="/delete">
+<form action="/delete" method="post">
     <p><h1>Removing a user by username</h1><br/>
     <input type="text" name="username"/><br/>
     <input type="submit" value="OK"/>

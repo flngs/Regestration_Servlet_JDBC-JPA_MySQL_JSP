@@ -14,7 +14,7 @@
 <body>
 <div align="center">
     <h1>Employee Register Form</h1>
-    <form action="/register">
+    <form action="/employeeRegister" method="post">
         <table style="with: 80%">
             <tr>
                 <td>First Name</td>
