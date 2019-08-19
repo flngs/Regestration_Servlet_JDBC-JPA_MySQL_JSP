@@ -34,9 +34,9 @@ public class UpdateEmployeeServlet extends HttpServlet {
         employee.setPassword(req.getParameter("password"));
         employee.setContact(req.getParameter("contact"));
         employee.setAddress(req.getParameter("address"));
-        if (employeeDao.updateUser(employee)){
-            req.getRequestDispatcher("successUpdate.jsp").forward(req,resp);
-        }
+        employeeDao.updateUser(employee);
+        req.getRequestDispatcher("successUpdate.jsp").forward(req,resp);
+
 
     }
 }

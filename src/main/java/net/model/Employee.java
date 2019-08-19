@@ -1,16 +1,32 @@
 package net.model;
 
-import java.io.Serializable;
+import javax.persistence.*;
 
-
-public class Employee implements Serializable {
-    private static final long serialVersionUID = 1L;
+@Entity
+@Table(name = "employee")
+public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    @Column (name = "first_name")
     private String firstName;
+    @Column (name = "last_name")
     private String lastName;
+    @Column
     private String username;
+    @Column
     private String password;
+    @Column
     private String address;
+    @Column
     private String contact;
+
+    public Employee() {
+    }
+
+    public int getId() {
+        return id;
+    }
 
     public String getFirstName() {
         return firstName;
