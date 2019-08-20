@@ -32,9 +32,10 @@ public class EmployeeDao implements EmployeeDaoInterface {
                 "password = :newPassword, " +
                 "address = :newAddress, " +
                 "contact = :newContact, " +
-                "username = :newUsername WHERE username = :oldUsername"); // Тип нужно сделать что бы замена инфы шла только по юзернейму...
+                "username = :newUsername WHERE username = :oldUsername");
         query.setParameter("newFirstName", employee.getFirstName())
                 .setParameter("newLastName", employee.getLastName())
+                .setParameter("newPassword", employee.getPassword())
                 .setParameter("newAddress", employee.getAddress())
                 .setParameter("newContact", employee.getContact())
                 .setParameter("newUsername", employee.getUsername())
