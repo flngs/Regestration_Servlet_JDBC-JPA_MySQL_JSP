@@ -5,9 +5,9 @@ import net.model.Employee;
 import javax.persistence.*;
 
 public class EmployeeDao implements EmployeeDaoInterface {
-    public EntityManagerFactory emf = Persistence.createEntityManagerFactory("net.model");
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("net.model");
 
-    public EntityManager getEntityManager() {
+    public static EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
 
