@@ -1,4 +1,5 @@
 <persistence-unit name="net.model">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <description>Hibernate EntityManager Demo</description>
         <class>net.model.Employee</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
